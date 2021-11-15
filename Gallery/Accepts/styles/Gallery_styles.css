@@ -1,0 +1,115 @@
+body {
+	background-color: rgb(230, 229, 224); /* Цвет фона блока */
+}
+.Gallery-main {
+	border: 2px solid rgb(238, 96, 96); /* Параметры границы */
+	height: 150%; /* Высота блока */
+	width: 95%; /* Ширина блока */
+	margin: 5px;
+	display: flex;
+	justify-content: center; /*  выравнивание flex элементов по горизонтали - центр*/
+	align-items: center; /*  выравнивание flex элементов по вертикали - центр*/
+	flex-wrap: wrap; /*  Элементы автоматически переносятся на новую строку*/
+}
+.Gallery-block1 {
+	border: 2px solid rgb(117, 96, 238); /* Параметры границы */
+	height: 100%; /* Высота блока */
+	width: 100%; /* Ширина блока */
+	margin: 5px;
+	display: flex;
+	justify-content: center; /*  выравнивание flex элементов по горизонтали - центр*/
+	align-items: center; /*  выравнивание flex элементов по вертикали - центр*/
+}
+.Gallery-block2 {
+	border: 2px solid rgb(238, 96, 202); /* Параметры границы */
+	height: 20%; /* Высота блока */
+	width: 100%; /* Ширина блока */
+	margin: 5px;
+	display: flex;
+	justify-content: center; /*  выравнивание flex элементов по горизонтали - центр*/
+	align-items: center; /*  выравнивание flex элементов по вертикали - центр*/
+	flex-wrap: wrap; /*  Элементы автоматически переносятся на новую строку*/
+}
+
+.Up {
+	border: 2px solid rgb(238, 96, 202); /* Параметры границы */
+	height: 3%; /* Высота блока */
+	width: 3%; /* Ширина блока */
+	margin: 5px;
+}
+.small-images {
+	border: 2px solid rgb(96, 238, 127); /* Параметры границы */
+	height: 20%; /* Высота блока */
+	width: 90%; /* Ширина блока */
+	margin: 5px;
+	padding: 5px;
+	object-fit: cover;
+	display: flex;
+	justify-content: center; /*  выравнивание flex элементов по горизонтали - центр*/
+	align-items: center; /*  выравнивание flex элементов по вертикали - центр*/
+	flex-wrap: wrap; /*  Элементы автоматически переносятся на новую строку*/
+}
+
+.Big-images {
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.Big-images .slides {
+	overflow: hidden;
+	height: 80vmin; /* Высота блока */
+	width: 100%; /* Ширина блока */
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li {
+	list-style-type: none; /* Убираем маркеры */
+}
+.Big-images .slides > li {
+	height: auto; /* Высота блока */
+	width: 100%; /* Ширина блока */
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}
+.Big-images .slides > li > img {
+	width: 100%;
+	height: auto;
+}
+
+.Big-images .slides li:target {
+	z-index: 3;
+	-webkit-animation: slide 1s 1;
+}
+.Big-images .slides li:not(:target) {
+	-webkit-animation: hidden 1s 1;
+}
+img {
+	width: 100%; /* Ширина блока */
+}
+
+@-webkit-keyframes slide {
+	0% {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes hidden {
+	0% {
+		z-index: 2;
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+	100% {
+		z-index: 2;
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+}

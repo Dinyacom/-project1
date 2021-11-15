@@ -1,0 +1,440 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: 200px;
+  src: url(".//accepts/fonts/Gilroy-Bold.woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: 200px;
+  src: url(".//accepts/fonts/Gilroy-Medium.woff2");
+}
+
+body {
+  padding: 0px;
+  border: 0px;
+}
+
+
+.section-top {
+  width: 100%;
+  height: 506px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-textTop {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-textName {
+  display: block;
+  font-family: "Gilroy-Bold", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 10px 30px 10px;
+}
+
+.section-textMain {
+  display: block;
+  font-family: "Gilroy-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 10px 30px 10px;
+}
+
+.section-center {
+  width: 100%;
+  height: 506px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 695px) {
+  .section-center {
+    height: auto;
+  }
+}
+
+.section-textBottom {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.section-app {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.section-appBlock {
+  width: 170px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.section-appLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.section-appName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+}
+
+.section-textApp {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-family: "Gilroy-Bold", "Arial", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.section-appRate {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-appLogo > a > img {
+  height: 90px;
+}
+
+.section-exemples {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.section-exemplesHeader {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-exemplesHeaderText {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-family: "Gilroy-Bold", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin: 100px 0 60px 0;
+}
+
+.section-exemplesFirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.section-exemplesSecond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.section-exemplesThird {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.section-exemplesMain {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+.section-exemplesMain img {
+  width: 100%;
+  height: auto;
+}
+
+.section-exemplesLinkText {
+  display: block;
+  font-family: "Gilroy-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: bold;
+  text-align: center;
+  padding: 30px 0px 80px 0px;
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 506px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-top {
+  display: flex;
+  width: 60%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-textTop {
+  display: flex;
+  width: auto;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-textName {
+  display: block;
+  width: auto;
+  font-family: "Gilroy-Bold", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 10px 30px 10px;
+}
+
+.footer-textMain {
+  display: block;
+  width: auto;
+  font-family: "Gilroy-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 10px 30px 10px;
+}
+
+.footer-bottonMassage {
+  width: 180px;
+  height: 42px;
+  border-radius: 21px;
+  background-color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  transition-duration: 0.5s;
+}
+
+.footer-bottonMassage:hover {
+  background-color: white;
+  transition-duration: 0.5s;
+}
+
+.footer-bottonMassageText {
+  color: white;
+  width: 180px;
+  height: 46px;
+  font-family: "Gilroy-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  user-select: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+
+.footer-bottonMassage:hover .footer-bottonMassageText {
+  color: black;
+  transition-duration: 0.5s;
+}
+
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottomMedia {
+  display: flex;
+  width: 360px;
+  height: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottomMediaApp {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  padding: 0 20px 0 20px;
+}
+
+.footer-bottomAdress {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-textAdress {
+  display: block;
+  width: auto;
+  font-family: "Gilroy-Medium", "Arial", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 10px 30px 10px;
+}
+
+.chat {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: 0.5s;
+}
+
+.chat:target {
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 0.5s;
+}
+
+.chat-bodyContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 600px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 2px solid black;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-bodyClose {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: flex;
+}
+
+.chat-bodyTittle {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: "Gilroy-Medium", "Arial", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chat-bodyText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-bodyText > textarea {
+  resize: none;
+  height: 250px;
+  width: 95%;
+  margin: 20px 20px 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.chat-bodyTextMain {
+  display: block;
+  font-family: "Gilroy-Medium", "Arial", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.chat-bodyText > input {
+  width: auto;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.chat-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.focus {
+  display: block;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+}
