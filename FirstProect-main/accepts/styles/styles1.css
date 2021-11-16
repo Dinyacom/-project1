@@ -1,0 +1,437 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: 200px;
+  src: url(".//accepts/fonts/Gilroy-Bold.woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: 200px;
+  src: url(".//accepts/fonts/Gilroy-Medium.woff2");
+}
+
+body {
+  padding: 0px;
+  border: 0px;
+}
+
+.hrefMain1{
+  top: 0px;
+  position: absolute;
+}
+
+.Nav-text1 {
+  display: block;
+  font-family: "Gilroy-Bold", "Arial", sans-serif; /* стиль текста  */
+  font-size: 18px; /* высота текста  */
+  font-weight: bold; /* жирный текст  */
+  text-align: center; /* центрирование текста  */
+}
+
+.Nav-text2 {
+  display: block;
+  font-family: "Gilroy-Bold", "Arial", sans-serif; /* стиль текста  */
+  font-size: 18px; /* высота текста  */
+  color: #828282; /* цвет текста  */
+  text-align: center; /* центрирование текста  */
+}
+
+.Nav-text3 {
+  display: block;
+  font-family: "Gilroy-Bold", "Arial", sans-serif; /* стиль текста  */
+  font-size: 18px; /* высота текста  */
+  color: #828282; /* цвет текста  */
+  text-align: center; /* центрирование текста  */
+  transform: rotate(-90deg); /* поворот текста  */
+  width: auto;
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+}
+
+.Head-text1 {
+  display: block;
+  font-family: "Gilroy-Bold", "Arial", sans-serif; /* стиль текста  */
+  font-size: 47px; /* высота текста  */
+  text-align: center; /* центрирование текста  */
+  font-weight: bold; /* жирный текст  */
+}
+
+.Head-text2 {
+  display: block;
+  font-family: "Gilroy-Medium", "Arial", sans-serif; /* стиль текста  */
+  font-size: 18px; /* высота текста  */
+  text-align: center; /* центрирование текста  */
+  font-weight: bold; /* жирный текст  */
+}
+
+.Head-text3 {
+  display: block;
+  font-family: "Gilroy-Bold", "Arial", sans-serif; /* стиль текста  */
+  font-size: 18px; /* высота текста  */
+  text-align: center; /* центрирование текста  */
+  transform: rotate(-90deg); /* поворот текста  */
+  color: #828282; /* цвет текста  */
+}
+
+/* Горизонтальная линия */
+hr {
+  border: none; /* Убираем границу */
+  background-color: #828282; /* Цвет линии */
+  color: #828282; /* Цвет линии для IE6-7 */
+  height: 1px; /* Толщина линии(Высота блока) */
+  width: 100%; /* Длинна линии */
+  max-width: 954px;
+  position: fixed;
+  top: 80px;
+  z-index: 150;
+}
+
+a {
+  text-decoration: none; /* Отменяет все эффекты, в том числе и подчеркивания у ссылок, которое задано по умолчанию */
+  color: rgb(
+    0,
+    0,
+    0
+  ); /* присваевает фиксированный цвет ссылки в обычном режиме */
+}
+
+p:hover {
+  color: rgb(233, 221, 221); /* меняет цвет при наведения курсора на ссылку */
+  background-color: rgb(112, 110, 241); /* Цвет фона блока */
+  cursor: pointer; /* Вид курсора при наведении  */
+  padding: 5px; /* Поля вокруг текста */
+  font-family: "Segoe UI"; /* Гарнитура текста */
+  font-size: 13px; /* Определяет размер шрифта элемента */
+}
+.Up {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: 52px; /* Высота блока */
+  width: 52px; /* Ширина блока */
+}
+.main1 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: auto; /* Высота блока */
+  width: 100%; /* Ширина блока */
+  max-width: 950px;
+  margin: 80px auto 0 auto; /* Отступ */
+  font-size: 12px; /* Определяет размер шрифта элемента */
+  display: flex;
+  flex-direction: Column; /*элементы располагаются сверху вниз. */
+  justify-content: space-between; /*Элементы отображаются с одинаковыми отступами между ними. */
+  align-items: center;
+}
+
+.Header1 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  
+  height: 85px; /* Высота блока */
+  width: 100%; /* Ширина блока */
+  max-width: 100%;
+  margin: 0px auto; /* Отступ */
+  display: flex;
+  justify-content: space-around; /*Элементы отображаются с одинаковыми отступами между ними. */
+  align-items: Center; /*Элементы выравниваются вертикально по центру контейнера. */
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+}
+
+.Header1-1 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: 85px; /* Высота блока */
+  width: 100%; /* Ширина блока */
+  max-width: 954px;
+  margin: 0px auto; /* Отступ */
+  font-size: 12px; /* Определяет размер шрифта элемента */
+  display: flex;
+  justify-content: space-around; /*Элементы отображаются с одинаковыми отступами между ними. */
+  align-items: Center; /*Элементы выравниваются вертикально по центру контейнера. */
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: 25px; /* Высота блока */
+  width: 85px; /* Ширина блока */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: 685px; /* Высота блока */
+  width: 100%; /* Ширина блока */
+  margin: 0px auto; /* Отступ */
+  font-size: 12px; /* Определяет размер шрифта элемента */
+  display: flex;
+  flex-wrap: wrap; /*  Элементы автоматически переносятся на новую строку*/
+  align-content: space-between; /*Ряды отображаются с одинаковыми расстояниями между ними. */
+}
+.section1-1 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: 210px; /* Высота блока */
+  width: 100%; /* Ширина блока */
+  margin: 0px auto; /* Отступ */
+  font-size: 12px; /* Определяет размер шрифта элемента */
+  display: flex;
+  justify-content: space-between; /*Элементы отображаются с одинаковыми отступами между ними. */
+  align-items: Center; /*Элементы выравниваются вертикально по центру контейнера. */
+}
+.Head1_1 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: 180px; /* Высота блока */
+  width: 60%; /* Ширина блока */
+  display: flex;
+  justify-content: space-between; /*Элементы отображаются с одинаковыми отступами между ними. */
+  align-items: Center; /*Элементы выравниваются вертикально по центру контейнера. */
+}
+
+.Head1 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: 180px; /* Высота блока */
+  width: 150px; /* Ширина блока */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Head2 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: 40px; /* Высота блока */
+  width: 165px; /* Ширина блока */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu1 {
+  display: none;
+}
+
+.Head3 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: 180px; /* Высота блока */
+  width: 40px; /* Ширина блока */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section1-2 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: 100%;
+  max-height: 410px; /* Высота блока */
+  width: 100%;
+  max-width: 945px; /* Ширина блока */
+  margin: 0px auto; /* Отступ */
+  font-size: 12px; /* Определяет размер шрифта элемента */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1-2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+}
+
+.section1-2-1 {
+  display: none;
+}
+.section1-3 {
+  background-color: rgb(255, 255, 255); /* Цвет фона блока */
+  border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+  height: 50px; /* Высота блока */
+  width: 100%; /* Ширина блока */
+  margin: 0px auto; /* Отступ */
+  font-size: 12px; /* Определяет размер шрифта элемента */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 695px) {
+  .Header1 {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  .main1 {
+    background-color: rgb(255, 255, 255); /* Цвет фона блока */
+    border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+    height: 810px; /* Высота блока */
+    width: 100%; /* Ширина блока */
+    display: flex;
+    justify-content: center; /*  выравнивание flex элементов по горизонтали - центр*/
+    align-items: center; /*  выравнивание flex элементов по вертикали - центр*/
+  }
+  .section1 {
+    background-color: rgb(255, 255, 255); /* Цвет фона блока */
+    border: 5px solid rgb(255, 255, 255); /* Параметры границы */
+    height: 780px; /* Высота блока */
+    width: 317px; /* Ширина блока */
+    margin: 0px auto; /* Отступ */
+    font-size: 12px; /* Определяет размер шрифта элемента */
+    display: flex;
+    flex-wrap: wrap; /*  Элементы автоматически переносятся на новую строку*/
+    align-content: space-between; /*Ряды отображаются с одинаковыми расстояниями между ними. */
+  }
+  .section1-1 {
+    background-color: rgb(255, 255, 255); /* Цвет фона блока */
+    border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+    height: 230px; /* Высота блока */
+    width: 100%; /* Ширина блока */
+  }
+  .Head1_1 {
+    background-color: rgb(255, 255, 255); /* Цвет фона блока */
+    border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+    height: 180px; /* Высота блока */
+    width: 100%; /* Ширина блока */
+    display: flex;
+    flex-wrap: wrap; /*Элементы автоматически переносятся на новую строку. */
+  }
+  .Head1 {
+    background-color: rgb(255, 255, 255); /* Цвет фона блока */
+    border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+    height: 100px; /* Высота блока */
+    width: 150px; /* Ширина блока */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Head3 {
+    display: none;
+  }
+  /** Мобильное меню */
+  .menu1 {
+    background-color: rgb(255, 255, 255); /* Цвет фона блока */
+    border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+    height: 170px; /* Высота блока */
+    width: 40px; /* Ширина блока */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Контейнер <div> - необходимо для размещения раскрывающегося контента*/
+  .menu-Mobile {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-self: flex-start; /*Элементы выравниваются по верхнему краю контейнера. */
+  }
+  /* Раскрывающийся кнопка */
+  .menu-Mobile-images {
+    background-color: #ffffff;
+    color: white;
+    padding: 7px;
+    border: none;
+  }
+
+  .menu-Mobile-block {
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    border: none;
+  }
+
+  /* Раскрывающийся контент (скрытый по умолчанию) */
+  .Mobile-Links {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0px;
+  }
+
+  /* Ссылки внутри раскрывающегося */
+  .Mobile-Links a {
+    padding: 25px 25px;
+    text-decoration: none;
+    display: block;
+    font-family: "Gilroy-Bold", "Arial", sans-serif; /* стиль текста  */
+    font-size: 18px; /* высота текста  */
+    text-align: left; /* центрирование текста  */
+    color: #828282; /* цвет текста  */
+  }
+
+  /* Изменить цвет раскрывающихся ссылок на Hover */
+  .Mobile-Links a:hover {
+    background-color: #ddd;
+  }
+
+  /* Покажите раскрывающееся меню на Hover */
+  .menu-Mobile:hover .Mobile-Links {
+    display: block;
+    cursor: pointer; /*Указатель, обозначающий ссылку, обычно указующая рука.*/
+  }
+
+  /* Измените цвет фона раскрывающегося кнопки, когда отображается раскрывающийся контент */
+  .menu-Mobile-block:hover .menu-Mobile-images {
+    background-color: #ddd;
+    cursor: pointer; /*Указатель, обозначающий ссылку, обычно указующая рука.*/
+  }
+
+  .section1-2 {
+    display: none;
+  }
+
+  .section1-2-1 {
+    background-color: rgb(255, 255, 255); /* Цвет фона блока */
+    border: 2px solid rgb(255, 255, 255); /* Параметры границы */
+    height: 478px; /* Высота блока */
+    width: 100%; /* Ширина блока */
+    margin: 0px auto; /* Отступ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav1:hover .Nav-text2 {
+  font-weight: bold;
+  color: black;
+}
+
+.nav2:hover .Nav-text2 {
+  font-weight: bold;
+  color: black;
+}
+
+.nav3:hover .Nav-text2 {
+  font-weight: bold;
+  color: black;
+}
+
+.nav4:hover .Nav-text2 {
+  font-weight: bold;
+  color: black;
+}
+
+.nav5:hover .Nav-text2 {
+  font-weight: bold;
+  color: black;
+}
