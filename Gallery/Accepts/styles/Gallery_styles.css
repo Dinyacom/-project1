@@ -78,6 +78,23 @@ li {
 	width: 100%;
 	height: auto;
 }
+/* 
+.Big-images .slides > li > img {
+	width: 100%;
+	/* height: auto; */ /* 
+	max-height: 300px;
+	min-height: 270px;
+}/
+
+Big-images {
+	display: block;
+	position: relative;
+	width: 100%;
+	/* overflow: hidden; */
+/*	https: //github.com/Dinyacom/-project1.git;
+	max-height: 800px;
+	min-height: 326px;
+}*/
 
 .Big-images .slides li:target {
 	z-index: 3;
@@ -86,10 +103,12 @@ li {
 .Big-images .slides li:not(:target) {
 	-webkit-animation: hidden 1s 1;
 }
+
 img {
 	width: 100%; /* Ширина блока */
 }
-
+/* @keyframes устанавливает ключевые кадры при анимации элемента
+Атрибут hidden представляет собой выключатель, который определяет, отображать объект в окне браузера или нет*/
 @-webkit-keyframes slide {
 	0% {
 		-webkit-transform: translateX(-100%);
