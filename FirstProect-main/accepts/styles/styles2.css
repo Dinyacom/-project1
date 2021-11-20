@@ -60,6 +60,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 
 @media (max-width: 695px) {
@@ -77,6 +78,11 @@ body {
   justify-content: center;
   margin-top: 60px;
   margin-bottom: 30px;
+}
+
+.section-focus{
+  position: absolute;
+  top: -85px;
 }
 
 .section-app {

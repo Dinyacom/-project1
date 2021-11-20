@@ -1,0 +1,130 @@
+.lightbox {
+	z-index: 10;
+	min-height: 100%;
+	max-height: 100%;
+	-webkit-transform: scale(0); /* прячет большую картинку  */
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: repeat-y rgba(0, 0, 0, 0.835); /* фон большой картинки  */
+	transition: transform 0.5s ease-out; /* скорость анимации при наведении  */
+}
+/* позиционирование и отступы большой картинки  */
+.lightbox img {
+	position: fixed;
+	top: 10%;
+	left: 0%;
+}
+/* убирает галочку для перехода с маленькой кортинки на большую  */
+input[type="checkbox"] {
+	display: none;
+}
+
+/* переход с маленькой кортинки на большую  */
+input[type="checkbox"]:checked + .lightbox {
+	transform: scale(1);
+}
+
+body {
+	background-color: rgba(97, 95, 91, 0.568); /* общий фон  */
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	-webkit-transition: all 1s ease-out; /* скорость анимации   */
+	cursor: pointer; /* Вид курсора при наведении  */
+}
+
+/* увеличивает картанки при наведении  */
+img:hover {
+	-webkit-transform: scale(1.05);
+}
+
+.Main-Container {
+	display: grid;
+	grid-template-columns: 2fr 3fr 2fr; /*сетка гридов по горизонтали */
+	grid-template-rows: 0.5fr 2fr 1fr 2fr; /*сетка гридов по вертикали */
+	grid-gap: 1vw; /*отступы между гидами*/
+	z-index: 0;
+	right: 0px;
+	left: 0px;
+	margin: 10px;
+	min-width: 95%; /*ширина*/
+	min-height: 95%; /*высота*/
+	position: absolute;
+}
+.box0 {
+	grid-column-start: 1; /* определяет начальную позицию элемента сетки в строке сетки */
+	grid-column-end: 4; /* определяет конечную позицию элемента сетки в строке сетки */
+	grid-row-start: 1; /* определяет начальную позицию элемента грид в столбце, добавляя линию */
+	grid-row-end: 0; /* определяет конечную позицию элемента грид в столбце, добавляя линию */
+	background-color: rgba(116, 111, 111, 0.452); /* цвет ячеек грида */
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box1 {
+	grid-column-start: 1; /* определяет начальную позицию элемента сетки в строке сетки */
+	grid-column-end: 0; /* определяет конечную позицию элемента сетки в строке сетки */
+	grid-row-start: 2; /* определяет начальную позицию элемента грид в столбце, добавляя линию */
+	grid-row-end: 5; /* определяет конечную позицию элемента грид в столбце, добавляя линию */
+	background-color: rgba(255, 251, 242, 0.637); /* цвет ячеек грида */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box2 {
+	grid-column-start: 2; /* определяет начальную позицию элемента сетки в строке сетки */
+	grid-column-end: 0; /* определяет конечную позицию элемента сетки в строке сетки */
+	grid-row-start: 2; /* определяет начальную позицию элемента грид в столбце, добавляя линию */
+	grid-row-end: 0; /* определяет конечную позицию элемента грид в столбце, добавляя линию */
+	background-color: rgba(193, 180, 223, 0.274); /* цвет ячеек грида */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box3 {
+	grid-column-start: 3; /* определяет начальную позицию элемента сетки в строке сетки */
+	grid-column-end: 0; /* определяет конечную позицию элемента сетки в строке сетки */
+	grid-row-start: 2; /* определяет начальную позицию элемента грид в столбце, добавляя линию */
+	grid-row-end: 0; /* определяет конечную позицию элемента грид в столбце, добавляя линию */
+	background-color: rgba(189, 223, 223, 0.301);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box4 {
+	background-color: rgba(246, 191, 191, 0.26);
+	grid-column-start: 2; /* определяет начальную позицию элемента сетки в строке сетки */
+	grid-column-end: 4; /* определяет конечную позицию элемента сетки в строке сетки */
+	grid-row-start: 3; /* определяет начальную позицию элемента грид в столбце, добавляя линию */
+	grid-row-end: 0; /* определяет конечную позицию элемента грид в столбце, добавляя линию */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box5 {
+	background-color: rgba(181, 223, 180, 0.239);
+	grid-column-start: 2; /* определяет начальную позицию элемента сетки в строке сетки */
+	grid-column-end: 0; /* определяет конечную позицию элемента сетки в строке сетки */
+	grid-row-start: 4; /* определяет начальную позицию элемента грид в столбце, добавляя линию */
+	grid-row-end: 0; /* определяет конечную позицию элемента грид в столбце, добавляя линию */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box6 {
+	background-color: rgba(165, 206, 236, 0.26);
+	grid-column-start: 3; /* определяет начальную позицию элемента сетки в строке сетки */
+	grid-column-end: 0; /* определяет конечную позицию элемента сетки в строке сетки */
+	grid-row-start: 4; /* определяет начальную позицию элемента грид в столбце, добавляя линию */
+	grid-row-end: 0; /* определяет конечную позицию элемента грид в столбце, добавляя линию */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -77,17 +77,6 @@ body {
 }
 
 /* Горизонтальная линия */
-hr {
-  border: none; /* Убираем границу */
-  background-color: #828282; /* Цвет линии */
-  color: #828282; /* Цвет линии для IE6-7 */
-  height: 1px; /* Толщина линии(Высота блока) */
-  width: 100%; /* Длинна линии */
-  max-width: 954px;
-  position: fixed;
-  top: 80px;
-  z-index: 150;
-}
 
 a {
   text-decoration: none; /* Отменяет все эффекты, в том числе и подчеркивания у ссылок, которое задано по умолчанию */
@@ -144,7 +133,8 @@ p:hover {
 .Header1-1 {
   background-color: rgb(255, 255, 255); /* Цвет фона блока */
   border: 2px solid rgb(255, 255, 255); /* Параметры границы */
-  height: 85px; /* Высота блока */
+  border-bottom: 2px solid black;
+  height: 81px; /* Высота блока */
   width: 100%; /* Ширина блока */
   max-width: 954px;
   margin: 0px auto; /* Отступ */
@@ -273,9 +263,7 @@ p:hover {
   .Header1 {
     display: none;
   }
-  hr {
-    display: none;
-  }
+
   .main1 {
     background-color: rgb(255, 255, 255); /* Цвет фона блока */
     border: 2px solid rgb(255, 255, 255); /* Параметры границы */
@@ -284,6 +272,7 @@ p:hover {
     display: flex;
     justify-content: center; /*  выравнивание flex элементов по горизонтали - центр*/
     align-items: center; /*  выравнивание flex элементов по вертикали - центр*/
+  margin: 0px;
   }
   .section1 {
     background-color: rgb(255, 255, 255); /* Цвет фона блока */
